@@ -41,7 +41,7 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
     }
-    .video-grid iframe {
+    .video-grid video {
       width: 100%;
       aspect-ratio: 16/9;
       border: none;
@@ -68,4 +68,45 @@
 
   <section id="reel">
     <h2>My Reel</h2>
-    <div class="video
+    <div class="video-grid">
+      <video controls preload="metadata">
+        <source src="videos/reel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="video-grid">
+      <video controls preload="metadata">
+        <source src="videos/project1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls preload="metadata">
+        <source src="videos/project2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hey, I'm Zaish — a video editor with over 4 years of experience using Adobe Premiere Pro and After Effects. I specialize in fast-paced, story-driven content and love bringing emotion and energy to every cut. Certified by Adobe, driven by passion.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to work together? Reach out:</p>
+    <ul>
+      <li>Email: your.email@example.com</li>
+      <li>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></li>
+      <li>GitHub: <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Zaish. All rights reserved.</p>
+  </footer>
+</body>
+</html>
