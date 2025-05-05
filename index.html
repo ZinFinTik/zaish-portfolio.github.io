@@ -41,7 +41,7 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
     }
-    .video-grid video {
+    .video-grid iframe {
       width: 100%;
       aspect-ratio: 16/9;
       border: none;
@@ -52,6 +52,8 @@
       background: #1a1a1a;
       color: #777;
     }
+    a { color: #66b2ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -69,24 +71,27 @@
   <section id="reel">
     <h2>My Reel</h2>
     <div class="video-grid">
-      <video controls preload="metadata">
-        <source src="videos/reel.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe 
+        src="https://drive.google.com/file/d/1Bbw6wgRz8LcUK3CkpHQ-Viv_Jj-mtlNU/preview" 
+        allow="autoplay" 
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
   <section id="projects">
     <h2>Selected Projects</h2>
     <div class="video-grid">
-      <video controls preload="metadata">
-        <source src="videos/project1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls preload="metadata">
-        <source src="videos/project2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe 
+        src="https://drive.google.com/file/d/1StI4Ql8_KMV82LQo3osfThFazxdVfshn/preview" 
+        allow="autoplay" 
+        allowfullscreen>
+      </iframe>
+      <iframe 
+        src="https://drive.google.com/file/d/1_Sf9gnFNcCU8pf9Ova0vhcvdpymlR2Fg/preview" 
+        allow="autoplay" 
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
@@ -100,7 +105,7 @@
     <p>Want to work together? Reach out:</p>
     <ul>
       <li>Email: zaish@cargman.com</li>
-      <li>Instagram: <a href="https://instagram.com/kurroppoi" target="_blank">@kuroppoi</a></li>
+      <li>Instagram: <a href="https://instagram.com/kurroppoi" target="_blank">@kurroppoi</a></li>
     </ul>
   </section>
 
@@ -108,5 +113,4 @@
     <p>© 2025 Zaish. All rights reserved.</p>
   </footer>
 </body>
-  <link rel="stylesheet" href="style.css" />
 </html>
