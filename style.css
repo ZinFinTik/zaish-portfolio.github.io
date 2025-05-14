@@ -1,102 +1,136 @@
-/* Reset default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0d0d;
+  background: #0d0d0d;
   color: white;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #1a1a1a;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
 }
 
 h1 {
   font-size: 2.5rem;
-  color: #fff;
+  margin: 0;
 }
 
-.tagline {
+p.tagline {
   font-size: 1.2rem;
   color: #ccc;
-  margin-top: 0.5rem;
 }
 
 nav {
-  margin-top: 1rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 nav a {
   margin: 0 15px;
-  text-decoration: none;
   color: #999;
-  font-weight: 500;
+  text-decoration: none;
 }
 
 nav a:hover {
   color: #fff;
 }
 
+/* Section Styles */
 section {
+  padding: 2rem 1rem;
   max-width: 1000px;
   margin: auto;
-  padding: 2rem 1rem;
 }
 
-h2 {
-  font-size: 1.8rem;
+#essay p, #about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 1rem;
-  color: #fff;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
 }
 
-p {
+#essay {
+  background: #1a1a1a;
   color: #ddd;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+#essay h2 {
+  font-size: 2rem;
+  color: #fff;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+#my-image {
+  background: #0d0d0d;
+  text-align: center;
 }
 
-a {
-  color: #5ea9ff;
+#my-image h2 {
+  color: #fff;
+  font-size: 2rem;
 }
 
-a:hover {
-  text-decoration: underline;
+#my-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
 }
 
-video {
+.video-grid iframe {
   width: 100%;
-  border: 2px solid #222;
-  border-radius: 8px;
-  background: black;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+/* Contact and Footer */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
 }
 
 footer {
-  background-color: #1a1a1a;
   text-align: center;
   padding: 1rem;
+  background: #1a1a1a;
   color: #777;
-  margin-top: 2rem;
+}
+
+a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.tagline {
+    font-size: 1rem;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #essay p, #about p {
+    font-size: 1rem;
+  }
 }
