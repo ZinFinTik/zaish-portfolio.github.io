@@ -4,57 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zaish | Video Editor</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0d0d0d;
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #1a1a1a;
-    }
-    h1 { font-size: 2.5rem; margin: 0; }
-    p.tagline { font-size: 1.2rem; color: #ccc; }
-    nav {
-      text-align: center;
-      margin: 1rem 0;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #999;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-    }
-    .video-grid iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1a1a1a;
-      color: #777;
-    }
-    a { color: #66b2ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -64,6 +14,8 @@
       <a href="#reel">Projects</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="#essay">Essay</a>
+      <a href="#my-image">Artwork</a>
     </nav>
   </header>
 
@@ -72,32 +24,48 @@
     <div class="video-grid">
       <iframe 
         src="https://drive.google.com/file/d/1Bbw6wgRz8LcUK3CkpHQ-Viv_Jj-mtlNU/preview" 
+        title="Project 1: Video Editing Example"
         allow="autoplay" 
         allowfullscreen>
       </iframe>
     </div>
   </section>
 
-  <section id="projects continued...">
+  <section id="projects-continued">
     <h2>Selected Projects</h2>
     <div class="video-grid">
       <iframe 
         src="https://drive.google.com/file/d/1StI4Ql8_KMV82LQo3osfThFazxdVfshn/preview" 
+        title="Project 2: Creative Video"
         allow="autoplay" 
         allowfullscreen>
       </iframe>
       <iframe 
         src="https://drive.google.com/file/d/1_Sf9gnFNcCU8pf9Ova0vhcvdpymlR2Fg/preview" 
+        title="Project 3: Professional Video"
         allow="autoplay" 
         allowfullscreen>
       </iframe>
     </div>
   </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hey, I'm Zaish — a video editor with over 4 years of experience using Adobe Premiere Pro and After Effects. I specialize in high quality sleek videos that appeal to the eyes. Certified by Adobe, driven by passion. You can check out some of my previous work on <a href="https://www.youtube.com/@DonnaLorenNow/videos" target="_blank">YouTube</a>.</p>
-</section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hey, I'm Zaish — a video editor with over 4 years of experience using Adobe Premiere Pro and After Effects. I specialize in high quality sleek videos that appeal to the eyes. Certified by Adobe, driven by passion. You can check out some of my previous work on <a href="https://www.youtube.com/@DonnaLorenNow/videos" target="_blank">YouTube</a>.</p>
+  </section>
+
+  <section id="essay">
+    <h2>My Essay: The Future of Video Editing</h2>
+    <p>Video editing has evolved significantly over the last few years. In this essay, I explore the technologies that are shaping the future of video editing. With advancements in AI, real-time rendering, and automated editing tools, the editing process is becoming faster, more intuitive, and accessible to a wider range of creators.</p>
+    <p>As AI continues to improve, video editors will be able to automate repetitive tasks, leaving more time for creativity. However, the human touch remains indispensable in areas like storytelling and emotion-driven editing. This balance between technology and artistry will define the future of video editing.</p>
+    <p>Ultimately, the future is bright, with new tools and technologies pushing the boundaries of what we can create. The possibilities for creativity and innovation are limitless.</p>
+  </section>
+
+  <section id="my-image">
+    <h2>My Artwork</h2>
+    <img src="path-to-your-image.jpg" alt="A screenshot of a class project I worked on" />
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Want to work together? Reach out:</p>
