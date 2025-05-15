@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Climate Change Impacts: Who Pays the Price?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="climate_change.html">Climate Change</a>
+    <a href="disaster_relief.html">Disaster Relief</a>
+    <a href="food_deserts.html">Food Deserts</a>
+    <a href="enviromental_injustice.html">Enviromental Injustice</a>
+    <a href="green_space.html">Green Space</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+ <main>
+  <h1>Beating the Heat: Why Local Action on Climate Change Matters</h1>
+
+  <h2>Why This Matters</h2>
+  <p>
+    When people talk about climate change, it can feel overwhelming. But the truth is, we’re already seeing its effects in our neighborhoods — especially during extreme heat. The hottest days are getting hotter, and cities are feeling it the most. This isn’t just uncomfortable, it's dangerous. And the people hit hardest are often those with the fewest resources to stay safe.
+  </p>
+
+  <h2>The Problem: Heatwaves in Our Cities</h2>
+  <ul>
+    <li>Heatwaves are becoming longer and more intense.</li>
+    <li>In cities, pavement and concrete trap heat — especially in neighborhoods without trees or shade. These are often low-income areas where families already face challenges like poor housing and limited access to cooling.</li>
+    <li>Urban heat islands can be up to 15 – 20°F hotter than greener neighborhoods.</li>
+    <li>People without air conditioning or safe places to cool off are more likely to suffer heat stroke or die during extreme heat events.</li>
+    <li>The EPA reports that heat waves have gotten worse in recent decades, especially in big cities.</li>
+    <li>This isn’t just about weather. It’s about justice. Why should someone’s zip code decide how safe they are from heat?</li>
+  </ul>
+
+  <h2>What We Can Do: Small Fixes, Big Impact</h2>
+  <ul>
+    <li>-Plant trees in neighborhoods that lack shade</li>
+    <li>-Create small parks or cool zones, especially near bus stops, schools, or apartments</li>
+    <li>-Use reflective or green roofing to reduce heat from buildings</li>
+    <li>-Design shaded public spaces for people to gather and cool off</li>
+  </ul>
+  <p>These aren’t giant climate policies — they’re local fixes that help people right now.</p>
+
+  <h2>Why It Works</h2>
+  <ul>
+    <li>Tree planting can lower neighborhood temperatures by up to 9°F.</li>
+    <li>Cities like Los Angeles and Philadelphia have used these strategies to cool streets and save lives.</li>
+    <li>Cooler neighborhoods mean fewer hospital visits, lower energy bills, and better mental health.</li>
+    <li>If we start with the areas most at risk, these small changes can add up to something big.</li>
+  </ul>
+
+  <h2>Final Thoughts</h2>
+  <p>
+    We can’t fix everything overnight — but that’s not the point. This is about making change where we live. It’s about planting trees to beat the heat, creating safe spaces, and fighting for fairness. Everyone deserves a safe place to live, no matter their income, race, or neighborhood.
+  </p>
+</main>
+
+  <div class="circles"></div>
+
+  <script>
+    const container = document.querySelector(".circles");
+
+    setInterval(() => {
+      if (container.children.length >= 50) return;
+
+      const circle = document.createElement("span");
+      const size = 10 + Math.random() * 20;
+      circle.style.left = `${Math.random() * 100}%`;
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
+      circle.style.background = "rgba(255, 255, 255, 0.15)";
+      circle.style.bottom = "-50px";
+      circle.style.animation = `float ${15 + Math.random() * 20}s linear forwards`;
+
+      container.appendChild(circle);
+      setTimeout(() => container.removeChild(circle), 40000);
+    }, 800);
+  </script>
+</body>
+</html>
