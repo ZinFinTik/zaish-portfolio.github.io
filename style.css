@@ -1,136 +1,147 @@
-/* General Styles */
+/* Base Styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #0d0d0d;
-  color: white;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #1a1a1a;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-p.tagline {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
+/* Navigation Bar */
 nav {
+  background: #111;
+  padding: 1rem;
   text-align: center;
-  margin: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
-  margin: 0 15px;
-  color: #999;
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #00ffff;
+  font-weight: bold;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #fff;
+  background-color: rgba(0, 255, 255, 0.1);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
 }
 
-/* Section Styles */
-section {
-  padding: 2rem 1rem;
-  max-width: 1000px;
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 800px;
   margin: auto;
+  text-align: left;
+  animation: fadeIn 1.2s ease-out;
 }
 
-#essay p, #about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00ffff, #00d2ff, #00ffff);
+  background-size: 200%;
+  background-position: left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideText 3s infinite linear;
+  text-shadow: 0 0 10px #00ffff88;
 }
 
-#essay {
-  background: #1a1a1a;
-  color: #ddd;
+/* Text entrance animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#essay h2 {
-  font-size: 2rem;
-  color: #fff;
+/* Gradient movement for header */
+@keyframes slideText {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
-#my-image {
-  background: #0d0d0d;
-  text-align: center;
-}
-
-#my-image h2 {
-  color: #fff;
-  font-size: 2rem;
-}
-
-#my-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.video-grid iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border: none;
-}
-
-/* Contact and Footer */
+/* List Styling */
 ul {
   list-style: none;
   padding: 0;
 }
 
 ul li {
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
-footer {
-  text-align: center;
+/* Background Bubble Animation */
+.circles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.circles span {
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  bottom: -50px;
+  animation: float 20s linear forwards;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150vh);
+    opacity: 0;
+  }
+}
+
+/* Link Box Styling */
+.link-box {
+  display: block;
+  background-color: #1e1e1e;
+  color: #00ffff;
   padding: 1rem;
-  background: #1a1a1a;
-  color: #777;
-}
-
-a {
-  color: #66b2ff;
+  margin: 1rem 0;
+  border-radius: 10px;
   text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  p.tagline {
-    font-size: 1rem;
-  }
-
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #essay p, #about p {
-    font-size: 1rem;
-  }
+.link-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  background-color: #2a2a2a;
 }
