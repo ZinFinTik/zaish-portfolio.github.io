@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impacts of Food Deserts: Who do they Affect?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="climate_change.html">Climate Change</a>
+    <a href="disaster_relief.html">Disaster Relief</a>
+    <a href="food_deserts.html">Food Deserts</a>
+    <a href="enviromental_injustice.html">Enviromental Injustice</a>
+    <a href="green_space.html">Green Space</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+
+<main>
+  <h1>Impacts of Food Deserts: Who do they Affect?<h1>
+  <h2>Why This Matters</h2>
+  <p>
+    Knowing the truth about food deserts and how they affect people can help shed light on something mostly hidden from the public. Food deserts are places where people don't have access to healthy food, which can lead to many health issues. People in these areas are usually low-income ethnic families and these food deserts are more prevalent and severe than the media tries to tell you.
+  </p>
+
+  <h2>The Facts</h2>
+  <ul>
+    <li>The USDA estimates about 23.5 million Americans live in food deserts and more than half of that number are low-income families who are ethnic.</li>
+    <li>“Medical News Today” describes food deserts as regions with limited food caused by a lack of money or having to travel far for healthy affordable food, which leads to dietary issues and cardiovascular issues.</li>
+    <li>Food deserts are not always defined by the location of nearby food, but can also result in how affordable food is.</li>
+    <li>Food deserts are not just about how much money is available, or what food costs. It's about how people in low-income ethnic areas do not get the same amount of affordable food due to the lack of jobs and prices that they cannot afford.</li>
+  </ul>
+
+  <h2>What We Can Do: Improve Education</h2>
+  <ul>
+    <li>-Changing the way that schools in low-income areas teach nutrition so that people can make better choices when it comes to what they eat.</li>
+    <li>-Having health experts in grocery stores that can help point people in the right direction when it comes to food.</li>
+    <li>-Making food more affordable for people in these low-income ethnic areas.</li>
+  </ul>
+
+  <h2>Why It Works</h2>
+  <p>
+    These solutions work because some of them have been used before and have shown results like more affordable food. I also believe that how schools teach nutrition in higher income public schools is way different than the lack of education in low-income ethnic schools. If that gap is mended then knowledge of what food does can help avoid future health problems in food deserts.
+  </p>
+
+  <h2>Final Thoughts</h2>
+  <p>
+    In conclusion, food deserts cause people from low-income ethnic backgrounds to suffer because of the lack of education they are given about health, and the lack of inclusivity when it comes to knowledge of nutrition that high-income people have readily available. But, with support and long-term activism, several solutions can help these people who are in food deserts get the care that they deserve.
+  </p>
+</main>
+
+
+  <div class="circles"></div>
+
+  <script>
+    const container = document.querySelector(".circles");
+
+    setInterval(() => {
+      if (container.children.length >= 50) return;
+
+      const circle = document.createElement("span");
+      const size = 10 + Math.random() * 20;
+      circle.style.left = `${Math.random() * 100}%`;
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
+      circle.style.background = "rgba(255, 255, 255, 0.15)";
+      circle.style.bottom = "-50px";
+      circle.style.animation = `float ${15 + Math.random() * 20}s linear forwards`;
+
+      container.appendChild(circle);
+      setTimeout(() => container.removeChild(circle), 40000);
+    }, 800);
+  </script>
+</body>
+</html>
