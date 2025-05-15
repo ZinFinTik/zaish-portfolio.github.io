@@ -69,6 +69,9 @@ iframe {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   margin-top: 20px;
+  max-width: 800px; /* Keeps reflection box left-aligned and limited width */
+  margin-left: auto;
+  margin-right: auto; /* Centers reflection box within its container */
 }
 
 #reflection h2 {
@@ -101,7 +104,7 @@ main {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
-  text-align: left;
+  text-align: center; /* Centers text inside main for h1 and p */
   animation: fadeIn 1.2s ease-out;
 }
 
@@ -115,6 +118,12 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: slideText 3s infinite linear;
   text-shadow: 0 0 10px #00ffff88;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ffffff;
 }
 
 /* Text entrance animation */
