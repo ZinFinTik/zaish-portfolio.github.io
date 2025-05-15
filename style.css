@@ -53,7 +53,7 @@ h1 {
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #00ffff, #00d2ff, #00ffff);
   background-size: 200%;
-  background-position: left;
+  background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slideText 3s infinite linear;
