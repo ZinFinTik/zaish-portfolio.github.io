@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Essay 1 – FEMA and Inequality</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="climate_change.html">Climate Change</a>
+    <a href="disaster_relief.html">Disaster Relief</a>
+    <a href="food_deserts.html">Food Deserts</a>
+    <a href="enviromental_injustice.html">Enviromental Injustice</a>
+    <a href="green_space.html">Green Space</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+
+  <main>
+    <div>
+  <h1>What is Green Space and Why Does It Matter?</h1>
+  <h2>Why Green Space Matters</h2>
+  <p>
+    Green space refers to areas filled with plants, trees, and grass that people can access, such as parks, gardens, and tree-lined streets.
+    These spaces are important not only for the environment but also for people's mental and physical health.
+  </p>
+  <p>
+    Green spaces improve the environment by cleaning the air and water, reducing heat in cities, and supporting wildlife.
+    They provide a safe place for animals to live and move through urban areas. Without these spaces, cities can become polluted.
+    Green spaces also have a positive effect on mental health by reducing stress, improving memory, and helping people feel happier.
+    Spending time in nature helps people feel better and think more clearly.
+  </p>
+
+  <h2>What Can We Do to Increase Green Space?</h2>
+  <ul>
+    <li>-Create more green spaces, especially in cities where they are often lacking.</li>
+    <li>-Build more parks and plant trees in urban neighborhoods.</li>
+    <li>-Add green roofs and vertical gardens to buildings.</li>
+  </ul>
+  <p>
+    By making nature more accessible, we can help improve the environment and people's well-being.
+  </p>
+
+  <h2>Why This Works</h2>
+  <p>
+    The benefits of green spaces are clear. Spending time outside lowers stress, helps people focus better, and boosts happiness.
+    For children, green spaces support learning, improve impulse control, and reduce issues like obesity and depression.
+    Nature has proven benefits that improve both physical and mental health.
+  </p>
+
+  <h2>Final Thoughts</h2>
+  <p>
+    Green spaces are crucial for both the environment and people’s health. They help clean the air and water, provide shelter for animals,
+    and improve mental and physical well-being. We should focus on creating more of these spaces so everyone can benefit from nature.
+  </p>
+</div>
+
+  </main>
+
+  <div class="circles"></div>
+
+  <script>
+    const container = document.querySelector(".circles");
+
+    setInterval(() => {
+      if (container.children.length >= 50) return;
+
+      const circle = document.createElement("span");
+      const size = 10 + Math.random() * 20;
+      circle.style.left = `${Math.random() * 100}%`;
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
+      circle.style.background = "rgba(255, 255, 255, 0.15)";
+      circle.style.bottom = "-50px";
+      circle.style.animation = `float ${15 + Math.random() * 20}s linear forwards`;
+
+      container.appendChild(circle);
+      setTimeout(() => container.removeChild(circle), 40000);
+    }, 800);
+  </script>
+</body>
+</html>
