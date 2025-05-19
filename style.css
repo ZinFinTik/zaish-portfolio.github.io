@@ -7,7 +7,15 @@ body {
   color: #A41309;
   overflow-x: hidden;
 }
-
+.video-grid iframe,
+.document-container iframe {
+  width: 100%;
+  max-width: 900px;    /* or larger if you want */
+  height: 500px;       /* adjust height as needed */
+  border: none;
+  display: block;
+  margin: 1rem auto;
+}
 /* Background Video */
 #bg-video {
   position: fixed;
