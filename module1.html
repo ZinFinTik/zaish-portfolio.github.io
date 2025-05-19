@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <video autoplay muted loop id="bg-video">
+    <source src="Fire_Rain_Particles_Looping_Background.mp4" type="video/mp4">
+  </video>
+
   <nav>
     <a href="home.html">Home</a>
     <a href="module1.html">Module 1</a>
@@ -16,30 +20,30 @@
     <a href="module5.html">Module 5</a>
     <a href="coursereflection.html">Course Reflection</a>
   </nav>
- <main>
-  <h1>Module 1 Overview</h1>
-  <section id="reel">
-    <div class="video-grid">
-      <!-- Updated video iframe source -->
-      <iframe 
-        src="https://drive.google.com/file/d/1etOExN6XE9rxG-KDXXNOlhKPmGaNFqtP/preview" 
-        title="Reflection Video"
-        allow="autoplay" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-   <h3>Throughout Module 1 I practiced clean design skills and learned advanced audio editing techniques. This became extremely useful in later modules as we started editing interviews.</h3>
-</main>
+
+  <main>
+    <h1>Module 1 Overview</h1>
+    <section id="reel">
+      <div class="video-grid">
+        <iframe 
+          src="https://drive.google.com/file/d/1etOExN6XE9rxG-KDXXNOlhKPmGaNFqtP/preview" 
+          title="Reflection Video"
+          allow="autoplay" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <h3>
+      Throughout Module 1 I practiced clean design skills and learned advanced audio editing techniques. This became extremely useful in later modules as we started editing interviews.
+    </h3>
+  </main>
 
   <div class="circles"></div>
 
   <script>
     const container = document.querySelector(".circles");
-
     setInterval(() => {
       if (container.children.length >= 50) return;
-
       const circle = document.createElement("span");
       const size = 10 + Math.random() * 20;
       circle.style.left = `${Math.random() * 100}%`;
@@ -48,7 +52,6 @@
       circle.style.background = "rgba(255, 255, 255, 0.15)";
       circle.style.bottom = "-50px";
       circle.style.animation = `float ${15 + Math.random() * 20}s linear forwards`;
-
       container.appendChild(circle);
       setTimeout(() => container.removeChild(circle), 40000);
     }, 800);
