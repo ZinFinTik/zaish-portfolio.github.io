@@ -63,6 +63,7 @@ main {
   text-align: center;
   animation: fadeIn 1.2s ease-out;
   border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 h1 {
