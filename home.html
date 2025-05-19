@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="Fire_Rain_Particles_Looping_Background.mp4" type="video/mp4">
+  </video>
+
+  <!-- Floating Bubbles -->
+  <div class="circles"></div>
+
+  <!-- Navigation -->
   <nav>
     <a href="home.html">Home</a>
     <a href="module1.html">Module 1</a>
@@ -16,20 +26,20 @@
     <a href="module5.html">Module 5</a>
     <a href="coursereflection.html">Course Reflection</a>
   </nav>
+
+  <!-- Main Content -->
   <main>
-    <h1>Adobe Video Design II Class</h1>
+    <h1>Adobe Video Design II</h1>
     <p>Zaish 5/15/25</p>
-    <ul>
-      <a href="module1.html" class="link-box">Module 1</a>
-      <a href="module2.html" class="link-box">Module 2</a>
-      <a href="module3.html" class="link-box">Module 3</a>
-      <a href="module4.html" class="link-box">Module 4</a>
-      <a href="module5.html" class="link-box">Module 5</a>
-    </ul>
+    <a href="PitchDeck.pdf" class="link-box" target="_blank">📽️ View My Pitch Deck</a>
+    <a href="module1.html" class="link-box">Module 1</a>
+    <a href="module2.html" class="link-box">Module 2</a>
+    <a href="module3.html" class="link-box">Module 3</a>
+    <a href="module4.html" class="link-box">Module 4</a>
+    <a href="module5.html" class="link-box">Module 5</a>
   </main>
 
-  <div class="circles"></div>
-
+  <!-- Bubble Script -->
   <script>
     const container = document.querySelector(".circles");
 
