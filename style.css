@@ -129,7 +129,7 @@ a {
 .circles span {
   position: absolute;
   display: block;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(236, 219, 103, 0.3);
   border-radius: 50%;
   bottom: -50px;
   animation: float 20s linear forwards;
